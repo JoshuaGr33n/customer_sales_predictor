@@ -52,7 +52,7 @@ for name, model in models.items():
         accuracy = accuracy_score(y_test, y_pred)
         print(f"{name} - Accuracy: {accuracy}")
         if accuracy > best_score:
-            best_score = accuracy
+            best_score = accuracy   
             best_model = model
             best_model_name = name
     else:  # Regression models
